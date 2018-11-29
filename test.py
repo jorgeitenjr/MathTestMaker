@@ -1,5 +1,5 @@
 from mathtestmaker import MathTestMaker
-from customPrettyPrinter import CustomPrettyPrinter
+import pprint
 
 testmaker = MathTestMaker()
 question_requests = \
@@ -13,5 +13,5 @@ question_requests = \
 		]
 questions = testmaker.getSelectedQuestions( question_requests )
 for q in questions:	
-	CustomPrettyPrinter().pprint(q)
+	pprint.pprint(q)
 

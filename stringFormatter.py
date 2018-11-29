@@ -10,4 +10,4 @@ _ = languageTranslations.gettext
 
 class StringFormatter(object):
     def format(self, msgId):        
-        return _(msgId).decode("utf-8")
+        return _(msgId)
